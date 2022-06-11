@@ -22,7 +22,7 @@ body {
 /* EN HAUT */
 
 #titlebar {
-	position: fixed; margin: 0; padding: 0; left: 0; top: 0; right: 0; height: 45px; overflow: hidden;
+	position: fixed; margin: 0; padding: 0; left: 0; top: 0; right: 0; height: 45px; overflow: hidden;display:
 }
 
 #maintitle {
@@ -30,7 +30,7 @@ body {
 }
 
 #titlebar_links {
-	position: absolute; right: 0; height: 45px; overflow: hidden; width:100%;	
+	position: absolute; right: 0; height: 45px; overflow: hidden; width:calc(100% - 400px);	
 }
 
 h1 {
@@ -58,12 +58,17 @@ h1 a {
     width: 320px;
 }
 
+#recherche{
+	width: 400px; height:45px;
+	position: absolute; left:0;
+}
+
 #searchinput:focus, #searchinput:active {
     border-color:#aaa;
 }
 
 #searchsubmit {
-    position: absolute; left: 560px; top: 13px; width: 20px; height: 20px; margin: 0; padding: 0; height: 16px; border: none; background: none; text-indent: -999px; cursor: pointer; cursor: hand;
+    position: absolute; left: 360px; top: 13px; width: 20px; height: 20px; margin: 0; padding: 0; height: 16px; border: none; background: none; text-indent: -999px; cursor: pointer; cursor: hand;
 }
 
 .grey {
