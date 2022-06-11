@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Telegram Connections</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="styles/gexfjs.css" />
+        <link rel="stylesheet" type="text/css" href="styles/jquery-ui-1.10.3.custom.min.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script type="text/javascript">
+        // Fallback in case JQuery CDN isn't available
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript type='text/javascript' src='js/jquery-2.0.2.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="js/gexfjs.js"></script>
+        <script type="text/javascript" src="config.js"></script>
+    </head>
+    <body>
+        <div id="zonecentre" class="gradient">
+            <canvas id="carte" width="0" height="0"></canvas>
+            <ul id="ctlzoom">
+                <li>
+                    <a href="#" id="zoomPlusButton" title="S'approcher"> </a>
+                </li>
+                <li id="zoomSliderzone">
+                    <div id="zoomSlider"></div>
+                </li>
+                <li>
+                    <a href="#" id="zoomMinusButton" title="S'éloigner"> </a>
+                </li>
+                <li>
+                    <a href="#" id="lensButton"> </a>
+                </li>
+                <li>
+                    <a href="#" id="edgesButton"> </a>
+                </li>
+            </ul>
+        </div>
+        <div id="overviewzone" class="gradient">
+            <canvas id="overview" width="0" height="0"></canvas>
+        </div>
+        <div id="leftcolumn">
+            <div id="unfold">
+                <a href="#" id="aUnfold" class="rightarrow"> </a>
+            </div>
+            <div id="leftcontent"></div>
+        </div>
+        <div id="titlebar">
+            <div id="maintitle">
+                <h1><a href="https://t.me/regular_patty" target="_blank" title="Made by Antcating using Gephi">Telegram Connections</a></h1>
+            </div>
+            <form id="recherche">
+                <input id="searchinput" class="grey" autocomplete="off", placeholder="пошук каналів" />
+                <input id="searchsubmit" type="submit" />
+            </form>
+            <div id="titlebar_links">
+            	<h1 style="text-align: center;margin:10px;"> Telegram connections Graph </h1>
+	            <a href="https://t.me/regular_patty"><img src="img/telegram.png" style="position:absolute; top:0px; right:0px; margin:3px;height:40px; vertical-align: top;"></a>
+	            <a href="https://github.com/Antcating"><img src="img/github.png", style="position:absolute; top:0px; right:45px; margin:3px;height:40px; vertical-align: top;"></a> 
+            </div>
+        </div>
+        <ul id="autocomplete">
+        </ul>
+    </body>
+</html>
