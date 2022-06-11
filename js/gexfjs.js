@@ -838,7 +838,7 @@
     }
 
     function drawArrowhead(ctx, locx, locy, angle, sizex, sizey) {
-        var tmp = ctx.lineWidth * 10;
+        var tmp = ctx.lineWidth * 3;
         var hx = sizex / 2;
         var hy = sizey / 2;
         ctx.translate((locx), (locy));
